@@ -1,0 +1,295 @@
+.header-wrapper {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.logo a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.nav a {
+  color: var(--text-gray);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  transition: color .2s;
+}
+
+.nav a:hover, .nav a.active {
+  color: var(--text-white);
+}
+.booking-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 60px;
+  gap: 40px;
+}
+
+.booking-hero-content {
+  flex: 0 0 600px;
+}
+
+.booking-hero-desc {
+  color: var(--text-gray);
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 540px;
+}
+
+/* Список доступных модулей/опций */
+.modules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.module-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px 20px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.module-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 77, 0, 0.2);
+}
+
+.module-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-white);
+  margin-bottom: 4px;
+}
+
+.module-text {
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+/* Панель целевого действия и ценник */
+.booking-action {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  margin-top: 25px;
+}
+
+.booking-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.booking-price-note {
+  font-size: 13px;
+  color: var(--text-gray);
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.booking-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cosmo-card-img img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 60px rgba(123, 47, 247, 0.15);
+}
+
+/* Эффект градиентного текста для важных заголовков */
+h1.accent, h1 .accent {
+  background: linear-gradient(90deg, #ff4d00, #ff2a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Исправлена опечатка background-dip */
+  display: inline-block;
+}
+
+/* Промо-секция (Секция Шаурмы / Специальные предложения) */
+.promo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 60px;
+  gap: 50px;
+}
+
+.promo-content {
+  flex: 0 0 520px;
+}
+
+.promo-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.promo-text {
+  font-size: 16px;
+  color: var(--text-white);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.promo-text-sub {
+  font-size: 15px;
+  color: var(--text-gray);
+}
+
+.promo-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.promo-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link-secondary {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.link-secondary:hover {
+  color: var(--text-white);
+}
+
+.promo-price {
+  font-size: 16px;
+  color: var(--text-gray);
+}
+
+.promo-price-note {
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.promo-image-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.preview-card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.preview-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.preview-card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
+  padding: 20px;
+}
+
+.preview-card-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: white;
+}
+
+.preview-card-info p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-gray);
+}
+.footer {
+  background: #07040d;
+  padding: 80px 0;
+  margin-top: 60px;
+  color: var(--text-gray);
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  flex-shrink: 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer a {
+  color: var(--text-gray);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 12px;
+  transition: color .2s;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.orange-link {
+  color: var(--accent) !important;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.footer-col p {
+  line-height: 1.6;
+  max-width: 300px;
+}

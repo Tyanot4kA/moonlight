@@ -1,0 +1,105 @@
+:root {
+  --bg-color: #0b0514;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --accent-grad: linear-gradient(90deg, #ff4d00, #ff2a00);
+  --text-white: #ffffff;
+  --text-gray: rgba(255, 255, 255, 0.6);
+  --muted: rgba(255, 255, 255, 0.06);
+  --container-width: 1200px;
+  --container-pad: 40px;
+  --accent: #ff4d00;
+  --accent-strong: #ff2a00;
+  --font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-image: radial-gradient(circle at 80% 20%, #251044 0%, transparent 40%);
+  background-color: var(--bg-color);
+  color: var(--text-white);
+  font-family: var(--font-family);
+  line-height: 1.4;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 60px 0;
+}
+
+/* Элементы типографики */
+h1 {
+  font-size: 64px;
+  font-weight: 800;
+  margin: 15px 0;
+  line-height: 0.95;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.accent {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--text-gray);
+  font-size: 15px;
+  margin: -10px 0 40px;
+}
+
+/* Кнопки и базовые интерактивные элементы */
+.btn-primary {
+  background: var(--accent-grad); /* Исправлена синтаксическая ошибка var(-accent-grad) */
+  border: none;
+  padding: 14px 32px;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: transform .28s cubic-bezier(.2,.9,.3,1), filter .28s, box-shadow .28s;
+  line-height: 1;
+  box-shadow: 0 4px 15px rgba(255, 77, 0, 0.2);
+  will-change: transform;
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px) scale(1.01);
+  filter: brightness(1.08);
+  box-shadow: 0 12px 30px rgba(255, 77, 0, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(-1px) scale(.995);
+  transition: transform .12s;
+}

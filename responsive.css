@@ -1,0 +1,266 @@
+/* ==========================================================================
+   1. ДЛЯ ПЛАНШЕТОВ И МАЛЕНЬКИХ МОНИТОРОВ (до 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  :root {
+    --container-pad: 24px;
+  }
+
+  /* Сетка туров на главной */
+  .tours-grid {
+    gap: 20px;
+  }
+  
+  .tour-image-wrap img {
+    height: 220px;
+  }
+
+  /* Специфика страницы Бронирования */
+  .booking-hero {
+    gap: 35px;
+  }
+
+  .booking-hero-content {
+    flex: 0 0 500px;
+  }
+
+  /* Специфика страницы О Нас */
+  .about-content {
+    flex: 0 0 500px;
+  }
+}
+
+/* ==========================================================================
+   2. ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ (до 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Общая адаптация типографики */
+  h1, .about-title {
+    font-size: 38px !important;
+    line-height: 1.1 !important;
+  }
+
+  h2, .form-container h2, .action-title {
+    font-size: 26px !important;
+  }
+
+  .separator {
+    margin: 35px 0;
+  }
+
+  /* Адаптив Шапки (учитывает класс с опечаткой dass="header-wrapper") */
+  .header-wrapper, [dass="header-wrapper"] {
+    padding-inline: 15px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding-block: 15px;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 12px;
+  }
+
+  .nav a {
+    margin: 0 !important;
+  }
+
+    /* ГЛАВНАЯ СТРАНИЦА (home.html) */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-block: 30px 20px !important; /* Уменьшаем внутренние отступы баннера */
+    height: auto !important;             /* Сбрасываем жесткую высоту, если она была */
+    min-height: auto !important;
+    gap: 15px !important;                /* Делаем зазор между текстом и картинкой минимальным */
+  }
+
+  .hero-content {
+    width: 100%;
+    flex: unset !important;
+  }
+
+  /* Сжимаем отступ под описанием тура, чтобы кнопка встала выше */
+  .subtitle {
+    margin-bottom: 20px !important;
+  }
+
+  /* Убираем лишние отступы вокруг самой картинки */
+  .hero-image, [dass="hero-image"] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px !important;         /* Картинка подтянется ближе к кнопке */
+  }
+
+  .hero-image img, [dass="hero-image"] img {
+    width: 100%;
+    max-width: 340px;                    /* Немного уменьшим картинку на мобилке, чтобы она не занимала весь экран */
+    height: auto !important;
+  }
+
+
+  /* Сетки: 3 в ряд и 2 в ряд падают в 1 колонку */
+  .popular-grid, .tours-grid, .grid-3, [dass="grid-3"] {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .route-mini img {
+    height: 200px;
+  }
+
+  /* Форма (учитывает dass="form-container") */
+  .form-container, [dass="form-container"] {
+    padding: 30px 20px !important;
+  }
+
+  /* СТРАНИЦА СВЯЗЬ (comm.html) */
+  .features-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-card {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .feature-dot, [dass="feature-dot"] {
+    display: none; /* Скрываем разделительные точки */
+  }
+
+  .action-card {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .action-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+    /* СТРАНИЦА БРОНИРОВАНИЯ (booking.html) */
+  .booking-hero {
+    flex-direction: column;
+    text-align: center;
+    padding-block: 30px 15px !important; /* Сжимаем высоту первого экрана */
+    gap: 20px !important;
+  }
+
+  /* Учитывает класс dass="booking-hero-image" */
+  .booking-hero-image, [dass="booking-hero-image"] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px !important;
+  }
+
+  /* Исправление промо-секции с кнопкой "Забронировать со скидкой" */
+  .promo-section {
+    flex-direction: column-reverse; 
+    gap: 20px !important;          /* Уменьшаем зазор между картинкой и текстом */
+    padding-block: 30px !important; /* Жали гигантские отступы самой секции */
+    margin-block: 0 !important;
+  }
+
+  /* Учитывает класс dass="promo-content" */
+  .promo-content, [dass="promo-content"] {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Сжимаем отступы внутри блока с кнопкой и ценой */
+  .promo-footer {
+    gap: 10px !important;
+    margin-top: 15px !important;
+  }
+
+  .promo-buttons {
+    justify-content: center;
+    margin-bottom: 5px !important;
+  }
+
+  .promo-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px !important;
+  }
+
+  .preview-card img {
+    height: 220px !important; /* Уменьшаем высоту превью-картинки на мобилках */
+  }
+
+  /* Убираем гигантский отступ перед футером на этой странице */
+  .footer {
+    margin-top: 30px !important; 
+  }
+
+
+  /* СТРАНИЦА О НАС (about.html) */
+  /* Учитывает класс обертки с опечаткой main dass="about-hero..." */
+  .about-hero, [dass*="about-hero"] {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .styled-list, .numbered-list {
+    display: inline-block;
+    text-align: left; /* Текст списков оставляем читаемым слева */
+  }
+
+  .about-image-wrap {
+    position: static !important; /* Убираем sticky залипание на мобилках */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  /* АДАПТИВ ФУТЕРА ДЛЯ ВСЕХ СТРАНИЦ */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    gap: 35px;
+  }
+
+  /* Учитывает класс dass="footer-col" */
+  .footer-col, [dass="footer-col"] {
+    margin: 0 auto;
+  }
+}
+
+/* ==========================================================================
+   3. ДЛЯ СОВСЕМ МАЛЕНЬКИХ ЭКРАНОВ (до 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  h1, .about-title {
+    font-size: 30px !important;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .promo-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .promo-buttons button, .promo-buttons .btn-primary {
+    width: 100%;
+  }
+}

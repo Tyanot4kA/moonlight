@@ -1,0 +1,222 @@
+.header-wrapper {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.logo a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.nav a {
+  color: var(--text-gray);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  transition: color .2s;
+}
+
+.nav a:hover, .nav a.active {
+  color: var(--text-white);
+}
+.why-hero {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.why-hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.accent-orange-text {
+  color: #ff4d00;
+}
+
+.why-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  margin-bottom: 50px;
+  max-width: 600px;
+}
+
+/* Верхняя сетка с карточками преимуществ */
+.features-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 24px 20px;
+  flex: 1;
+  min-height: 220px;
+}
+
+.feature-icon {
+  font-size: 24px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.feature-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+}
+
+/* Декоративные разделительные точки между блоками */
+.feature-dot {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Секция: Интерактивное демонстрационное окно "Мы в деле" */
+.in-action {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.action-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 50px;
+}
+
+.action-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.action-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.action-text p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.action-text p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Блок фиксации пропорций изображения */
+.action-image-wrap {
+  flex: 0 0 420px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.action-glow-card {
+  width: 100%;
+}
+
+.action-glow-card img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 50px rgba(123, 47, 247, 0.25);
+}
+.footer {
+  background: #07040d;
+  padding: 80px 0;
+  margin-top: 60px;
+  color: var(--text-gray);
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  flex-shrink: 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer a {
+  color: var(--text-gray);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 12px;
+  transition: color .2s;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.orange-link {
+  color: var(--accent) !important;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.footer-col p {
+  line-height: 1.6;
+  max-width: 300px;
+}

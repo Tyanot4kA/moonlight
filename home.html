@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Космические путешествия — Галактика Шаурмы</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <header class="header-wrapper">
+    <div class="header container">
+      <div class="logo">
+        <a href="home.html" style="color: inherit; text-decoration: none;">Космические путешествия</a>
+      </div>
+      <nav class="nav">
+        <a href="home.html" class="active" style="color: var(--accent);">Туры</a>
+        <a href="booking.html">Бронирование</a>
+        <a href="comm.html">Связь</a>
+        <a href="about.html">О нас</a>
+      </nav>
+      <a href="booking.html" class="btn-primary" style="text-decoration: none;">Забронировать</a>
+    </div>
+  </header>
+
+  <div class="main-content">
+    
+    <section class="hero container">
+      <div class="hero-content">
+        <span class="badge">Акция: 15% на флагман</span>
+        <h1><span class="accent">Галактика шаурмы</span> <br> тур сезона</h1>
+        <p>Флагман: вкус вселенной в каждом слое... 21 день на маршруте с гидом и гастрономическими открытиями.</p>
+        <button type="button" class="btn-primary">Выбрать дату</button>
+      </div>
+      <div class="hero-image">
+        <img src="img/shawerma.jpg" alt="Галактика шаурмы — флагманский тур" />
+      </div>
+    </section>
+
+    <section class="popular container">
+      <h2>Популярные маршруты</h2>
+      <div class="popular-grid">
+        <div class="route-mini">
+          <img src="img/mak.jpg" alt="Планета макарон • орбитальные десерты" />
+          <span>планета макарон</span>
+        </div>
+        <div class="route-mini">
+          <img src="img/teft.jpg" alt="Астероиды тефтелей — острые путешествия" />
+          <span>астероиды тефтелей</span>
+        </div>
+        <div class="route-mini">
+          <img src="img/tom.jpg" alt="Океан Том Яма • острые и тёплые волны" />
+          <span>океан Том Яма</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="tours container">
+      <h2>Карта <span class="accent">туров</span></h2>
+      <p class="subtitle">Четыре направления — от сладкой недели до острого дня. Выберите вкус для космоса</p>
+      
+      <div class="tours-grid">
+        <div class="tour-card">
+          <div class="tour-image-wrap"><img src="img/mak.jpg" alt="Планета макарон — орбитальные десерты"></div>
+          <div class="tour-content">
+            <div class="tour-header">
+              <h3>Планета макарон</h3>
+              <span class="days">7 дней</span>
+            </div>
+            <p class="tour-desc">орбитальные десерты и макаронные дюны</p>
+            <div class="tour-footer">
+              <span class="price">от 1500 ₽</span>
+              <a href="booking.html" class="link">Выбрать тур</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-image-wrap"><img src="img/shawerma.jpg" alt="Галактика шаурмы — флагман: вкус вселенной"></div>
+          <div class="tour-content">
+            <div class="tour-header">
+              <h3>Галактика шаурмы</h3>
+              <span class="days">21 день</span>
+            </div>
+            <p class="tour-desc">флагман: вкус вселенной в каждом слое</p>
+            <div class="tour-footer">
+              <span class="price">от 3500 ₽</span>
+              <a href="booking.html" class="link">Выбрать тур</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-image-wrap"><img src="img/crab.jpg" alt="Планета крабового салата — наслаждение"></div>
+          <div class="tour-content">
+            <div class="tour-header">
+              <h3>Планета крабового салата</h3>
+              <span class="days">3 дня</span>
+            </div>
+            <p class="tour-desc">планета наслаждения и приятных вкусовых ощущений</p>
+            <div class="tour-footer">
+              <span class="price">от 890 ₽</span>
+              <a href="booking.html" class="link">Выбрать тур</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-image-wrap"><img src="img/kurica.jpg" alt="Галактика куриных ножек — вкусный сон"></div>
+          <div class="tour-content">
+            <div class="tour-header">
+              <h3>Галактика куриных ножек</h3>
+              <span class="days">14 дней</span>
+            </div>
+            <p class="tour-desc">на вкус как самый приятный сон</p>
+            <div class="tour-footer">
+              <span class="price">от 2500 ₽</span>
+              <a href="booking.html" class="link">Выбрать тур</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="contacts container">
+      <h2>Контактные <span class="accent">лица</span></h2>
+      <p class="subtitle">Люди, которые отвечают на вопросы быстрее, чем вы успеваете сказать "гравитация"</p>
+      <div class="grid-3">
+        <div class="person-card">
+          <div class="avatar orange">AO</div>
+          <strong>Алексей Орбитальный</strong>
+          <p>Ведущий гид</p>
+        </div>
+        <div class="person-card">
+          <div class="avatar red">MZ</div>
+          <strong>Мария Звездочкина</strong>
+          <p>Куратор по подготовке</p>
+        </div>
+        <div class="person-card">
+          <div class="avatar purple">DP</div>
+          <strong>Дмитрий Парящий</strong>
+          <p>Клиентский менеджер и чат поддержки</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="partners container">
+      <h2>Наши <span class="accent">партнеры</span></h2>
+      <p class="subtitle">Мы чем-то похожи, но все же мы разные</p>
+      <div class="grid-3">
+        <div class="person-card">
+          <img src="img/Amir.jpg" alt="Амир Пуков — партнёр из вселенной Галактик" class="avatar-img">
+          <strong>Амир Пуков</strong>
+          <p>Партнер из вселенной "Галактик"</p>
+        </div>
+        <div class="person-card">
+          <img src="img/Dana.jpg" alt="Дана Пятерка — партнёр из вселенной Базар" class="avatar-img">
+          <strong>Дана Пятерка</strong>
+          <p>Партнер из вселенной "Базар"</p>
+        </div>
+        <div class="person-card">
+          <img src="img/Vlad.jpg" alt="Владислав Бур — партнёр из вселенной Донат" class="avatar-img">
+          <strong>Владислав Бур</strong>
+          <p>Партнер из вселенной "Донат"</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="feedback container">
+      <div class="form-container">
+        <h2>Напишите <span class="accent">нам</span></h2>
+        <form action="/send" method="post" enctype="multipart/form-data">
+          <div class="input-group">
+            <label for="user-name">Имя</label>
+            <input type="text" id="user-name" name="name" required>
+          </div>
+          <div class="input-group">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" required>
+          </div>
+          <div class="input-group">
+            <label for="contact-phone">Телефон</label>
+            <input type="tel" id="contact-phone" name="phone" pattern="\+?\d{7,15}" placeholder="+7XXXXXXXXXX" required>
+          </div>
+          <div class="input-group relative">
+            <label for="user-message">Сообщение</label>
+            <textarea id="user-message" name="message" rows="6" placeholder="Отсутствие психических и физических травм" required></textarea>
+            <label class="btn-attach" for="file-selector" title="Прикрепить файл">Прикрепить файл</label>
+            <input type="file" id="file-selector" name="attachment" class="visually-hidden" />
+          </div>
+          <button type="submit" class="btn-primary full-width">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Космические путешествия</h3>
+        <p>Туры по вселенным с теплым приемом на Земле</p>
+        <a href="tel:+79387654356" class="orange-link">+7 938 765-43-56</a>
+        <a href="mailto:dimoncheck94@gmail.com" class="orange-link">dimoncheck94@gmail.com</a>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <a href="home.html">Туры</a>
+        <a href="booking.html">Бронирование</a>
+        <a href="comm.html">Связь</a>
+        <a href="about.html">О нас</a>
+      </div>
+      <div class="footer-col">
+        <h4>Юридическое</h4>
+        <p>Ироничный промо-проект "Космические путешествия" и маршруты не являются реальными финансовыми или туристическими предложениями.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
