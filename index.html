@@ -193,7 +193,8 @@
           </div>
           <div class="input-group">
             <label for="contact-phone">Телефон</label>
-            <input type="tel" id="contact-phone" name="phone" pattern="\+?\d{7,15}" placeholder="+7XXXXXXXXXX" required>
+            <input type="tel" id="contact-phone" name="phone" placeholder="+7XXXXXXXXXX" required pattern="\d{7,15}" oninput="this.value = this.value.replace(/\D/g,'')"
+>
           </div>
           <div class="input-group relative">
             <label for="user-message">Сообщение</label>
